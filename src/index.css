@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -221,4 +231,28 @@ body {
   .search-btn .search-btn__text {
     display: none;
   }
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.error-page span {
+  font-weight: 400;
+}
+
+.error-page--link {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: #256eeb;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.error-page--link:visited {
+  color: #ffffff;
 }
